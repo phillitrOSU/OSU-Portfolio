@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1722438048",
+        "python_version": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+        "command_line_arguments": "/home/segue/GroupML467/breakout_prototype/ml-agents/venv/bin/mlagents-learn --run-id=test1 --force",
+        "mlagents_version": "1.0.0",
+        "mlagents_envs_version": "1.0.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.4.0+cu121",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1722438139"
+    },
+    "total": 90.70948456402402,
+    "count": 1,
+    "self": 0.004095181007869542,
+    "children": {
+        "run_training.setup": {
+            "total": 0.013498026994057,
+            "count": 1,
+            "self": 0.013498026994057
+        },
+        "TrainerController.start_learning": {
+            "total": 90.6918913560221,
+            "count": 1,
+            "self": 9.496905840933323e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 90.69176460499875,
+                    "count": 1,
+                    "self": 90.69176460499875
+                },
+                "TrainerController._save_models": {
+                    "total": 3.178196493536234e-05,
+                    "count": 1,
+                    "self": 3.178196493536234e-05
+                }
+            }
+        }
+    }
+}

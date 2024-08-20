@@ -1,0 +1,134 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{{!-- Create a table --}}
+<div class="table-container">
+<table id="Beer-table" class="center">
+    <caption>Beers In Stock</caption>
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.Brewery}}</td>
+            <td>{{this.Style}}</td>
+            <td>{{this.Year}}</td>
+            <td>{{this.Inventory}}</td>
+            <td>{{this.Price}}</td>
+            <td><i class="fa-solid fa-trash" id="btn" onclick="deleteBeer({{this.ID}})"></i></td>
+            <td><i class="fa-solid fa-pencil" id="btn" onclick="openUpdateBeer(this)"></i></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+<script src="js/delete_Beer.js"></script>
+
+<!-- /views/index.hbs -->
+
+{{!-- Form to add a record to the table  --}}
+<button type="button" class="open-button" onclick="openAddBeer()" id="add">Add a Beer</button>
+
+<div class="form-popup" id="addBeerForm">
+<form id="add-Beer-form-ajax" class="form-container">New Beer
+    <button type="button" id="close" onclick="closeAddBeer()">X</button><br>
+
+    <label for="input-beer_Name">Name: </label><br>
+    <input type="text" name="input-beer_Name" id="input-beer_Name">
+    <br>
+    <label for="input-brewery">Brewery: </label><br>
+    <select name="input-brewery" id="input-brewery-ajax">
+        <option value="">Select a Brewery</option>
+        {{#each Breweries}}
+        <option value="{{this.brewery_ID}}">{{this.brewery_Name}}</option>
+        {{/each}}
+    </select>   
+    <br>
+    <label for="input-style_ID">Style: </label><br>
+    <select name="input-style_ID" id="input-style_ID-ajax">
+        <option value="">Select a Style</option>
+        {{#each Styles}}
+        <option value="{{this.style_ID}}">{{this.style_Name}}</option>
+        {{/each}}
+    </select>
+    <br>
+
+    <label for="input-year">Year: </label><br>
+    <input type="number" min="1950" max="2050" step="1" value="2023" name="input-year" id="input-year">
+    <br>
+
+    <label for="input-inventory">Inventory: </label><br>
+    <input type="number" name="input-Inventory" id="input-inventory">
+    <br>
+    <label for="input-price">Price: </label><br>
+    <input type="number" step="0.01" name="input-price" id="input-price">
+    <br><br>
+    <input type="submit" value="Add Beer">
+</form>
+</div>
+
+{{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+<script src="js/add_Beer.js"></script>
+
+
+<div class="form-popup" id="updateBeerForm">
+<form id="update-Beer-form-ajax" class="form-container">Update Beer
+    <button type="button" id="close" onclick="closeUpdateBeer()">X</button><br>
+
+    <label for="input-beer_ID-update">Beer ID (uneditable): </label><br>
+    <input type="text" name="input-ID-update" id="input-ID-update-ajax" readonly><br>
+
+    <label for="input-Name">Name: </label><br>
+    <input type="text" name="input-Name-update" id="input-Name-update-ajax"><br>
+
+    <label for="input-Brewery-update">Brewery: </label><br>
+    <select name="input-Brewery-update" id="input-Brewery-update-ajax">
+        <option value="">Select a Brewery</option>
+        {{#each Breweries}}
+        <option value="{{this.brewery_ID}}">{{this.brewery_Name}}</option>
+        {{/each}}
+    </select>
+
+
+    <br>
+    <label for="input-Style-update">Style: </label><br>
+    <select name="input-Style-update" id="input-Style-update-ajax">
+        <option value="">Select a Style</option>
+        {{#each Styles}}
+        <option value="{{this.style_ID}}">{{this.style_Name}}</option>
+        {{/each}}
+    </select><br>
+
+    <label for="input-Year-update">Year: </label><br>
+    <input type="number" min="1950" max="2050" step="1" value="{{data.1.Year}}" name="input-Year-update" id="input-Year-update-ajax">
+    <br>
+    <label for="input-Inventory-update">Inventory: </label><br>
+    <input type="number" name="input-Inventory-update" id="input-Inventory-update-ajax">
+    <br>
+    <label for="input-Price-update">Price: </label><br>
+    <input type="number" step="0.01" name="input-Price-update" id="input-Price-update-ajax">
+    <br>
+    <br>
+    <input type="submit" value="Update Beer">
+</form>
+</div>
+
+<script src="js/update_Beer.js"></script>

@@ -1,0 +1,116 @@
+h1 {
+    color:rgb(29, 54, 54);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+a {
+    padding: 10px;
+}
+
+#name-entry{
+    margin-left: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    display: block;
+}
+
+#name-table{
+    border-collapse: collapse;
+}
+
+#submit{
+    padding: 5px;
+}
+
+tr td {
+    padding: 0;
+}
+
+
+#options{
+    position: relative;
+    left: 280px;
+}
+
+#number{
+    width: 40px;
+}
+
+#makegroups{
+    position: relative;
+    left: 280px;
+}
+
+
+#grouptitle{
+    position: relative;
+    left: 280px;
+}
+
+.container{
+    left:280px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:relative;
+    background-color: aqua;
+    width: 60%;
+    height: 400px;
+}
+
+
+#displaytable{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group{
+    position: relative;
+    left: 280px;
+    text-align: center;
+    background-color: rgb(169, 169, 169);
+    justify-content: center;
+    max-width: 100px;
+    border: solid 5px black;
+}
+
+#login-screen{
+    justify-self: center;
+    text-align: center;
+    
+}
+
+
+#login-form > * {
+    margin: 5px;
+}
+
+#signup-screen{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#signup-form > * {
+    margin: 5px;
+}

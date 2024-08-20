@@ -1,0 +1,165 @@
+/*Style body*/
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: larger;
+  background-color: #f8f9f9;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+}
+
+p, h1 {
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+nav {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+nav a {
+  font-weight: bold;
+  color:rgb(6, 29, 29);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color:rgb(183, 142, 72);
+}
+
+/*Style Tables */
+table {
+  background-color: rgb(199, 182, 172);
+  border-collapse: collapse;
+  padding-bottom: 10px;
+}
+
+caption {
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+
+th {
+  background-color: rgb(7, 97, 102);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+
+th, td {
+  background:rgb(135, 161, 162);
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-collapse: collapse;
+}
+
+td {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+th, tr, td {
+  line-height: 400%;
+}
+
+
+table tr:nth-child(odd) td{
+  background-color: rgb(235, 231, 227);
+}
+table tr:nth-child(even) td{
+  background-color: rgb(245, 242, 240);
+}
+
+tr:hover td{
+  background: rgb(215, 227, 239) !important;
+}
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;;
+}
+
+
+
+
+/* Style buttons */
+#btn {
+    background-color: rgb(135, 161, 162); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 14px; /* Some padding */
+    margin: 5px;
+    font-size: 10px; /* Set a font size */
+    cursor:pointer; /* Mouse pointer on hover */
+    border-radius: 8px;
+}
+  
+  /* Darker background on mouse-over */
+#btn:hover {
+  background-color:rgb(196, 172, 151);
+}
+
+
+#add {
+  color:rgb(6, 29, 29);
+  background-color: rgb(225, 234, 234);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#add:hover{
+  background-color: rgb(228, 207, 189);
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  border: 5px rgb(134, 206, 195) solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: -10px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  font-size: larger;
+  height: 500px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background-color: white;
+  outline: rgb(109, 133, 143) solid 10px;
+}
+
+label, input, select {
+  float: left;
+  font-size: 14pt;
+}
+
+label {
+  padding: 3px;
+}
+
+#close {
+  float: right;
+}
+

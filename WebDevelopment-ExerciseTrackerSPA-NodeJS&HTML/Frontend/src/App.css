@@ -1,0 +1,191 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+                      
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  color:rgb(34, 48, 48);
+  background-color:rgb(239, 246, 255);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  display: flow-root;
+  max-width: 60em;
+  min-width: 20em;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid teal;
+}
+/* ----- Anchors ----- Text links */
+
+nav {
+    background-color: rgb(168, 207, 207);
+    border: 2px double rgb(176, 228, 248);
+    font-size: 1.5em;
+    font-weight: 200;
+    text-decoration: dashed;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+a {
+    background-color: rgb(168, 207, 207);
+    border: 1px double rgb(100, 182, 214);
+    font-size: 1.5em;
+    font-weight: 200;
+    color:rgb(28, 52, 56);
+    margin:1em;
+    padding:10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a:hover {
+    color:rgb(0, 104, 195);
+    background-color: rgb(241, 241, 241);
+}
+
+a:active {
+    color:rgb(0, 104, 195);
+    background-color: rgb(211, 251, 251);
+}
+a:visited {
+    color: rgb(75, 0, 75);
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    background-color: transparent;
+    color: rgb(0, 37, 37);
+    font-size: 20px;
+    font-weight:400;
+    margin:.1;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgb(0, 37, 37);
+}
+
+main {
+    background-color: transparent;
+    color: rgb(0, 37, 37);
+    border: 2px solid teal;
+    margin: 2em;
+    padding: 1em;
+}
+
+div {
+    margin:1em;
+    margin-bottom: 2em;
+}
+
+
+/* background-color, color, border, font-size, font-weight, margin, and padding properties */
+footer {
+    color: rgb(0, 37, 37);
+    font-size: 20px;
+    font-weight:400;
+    background-color: transparent;
+    border-top: 1px solid teal;
+    padding-top: .5em;
+    margin-top: .1em;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/* ----- Table ----- */
+table {
+    text-align: center;
+    display: inline;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-collapse: collapse;
+}
+
+caption {
+    margin: 1em;
+}
+
+td {
+    border: 1px solid rgb(0, 16, 16);
+    padding-left: 1em;
+    padding-right:1em;
+}
+
+tr {
+    background-color: rgb(221, 248, 248);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(244, 253, 255);
+}
+
+th {
+    border: 1px solid teal;
+    padding: 5px;
+    background-color: rgb(154, 217, 226);
+}
+
+tr:hover {
+    background-color: rgb(204, 236, 238);
+}
+
+.tableButton:hover{
+    background-color: rgb(145, 210, 209);
+  }
+
+/*  ----- Form ----- */
+form {
+    text-align: center;
+}
+fieldset {
+    border-style: double;
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+}
+
+input {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgb(251, 243, 233);
+    font-size: 25px;
+    padding:5px;
+}
+
+select {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgb(251, 243, 233);
+    font-size: 25px;
+    padding:5px;
+}
+
+button {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: rgb(210, 234, 232);
+}

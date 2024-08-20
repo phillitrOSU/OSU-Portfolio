@@ -1,0 +1,87 @@
+<h1>Super Grouper</h1>
+
+<div id="name-entry">
+    <h2>Enter Names:</h2>
+    <table id="name-table">
+        <tr>
+            <td><input type="text" size="30" id="box1"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box2"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box3"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box4"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box5"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box6"></td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="box7"></td>
+        </tr>     
+        <tr>
+            <td><input type="text" size="30" id="box8"></td>
+        </tr>     
+        <tr>
+            <td><input type="text" size="30" id="box9"></td>
+        </tr>     
+        <tr>
+            <td><input type="text" size="30" id="box10"></td>
+        </tr>
+    </table>
+    <br>
+    <button id="clear" onclick="clearNames()">Clear</button>
+    <h3>Total:</h3><h3 id="totalNum">0</h3>
+</div>
+
+
+
+<div id="options">
+    <select id="grouping">
+        <option value="numberof">Number of groups</option>
+        <option value="numberper">Number per group</option>
+    </select>
+    :
+    <input type="number" id="number" size="100">
+    <br><br>
+    Name groups by:
+    <select id="category">
+        <option value="Number">Number</option>
+        <option value="Color">Color</option>
+    </select>
+    <br><br>
+</div>
+
+
+
+<div id="makegroups">
+<button type="button" onclick="makegroups()">Make Random Groups!</button>
+<button type="button" onclick="previousGroup()">Previous Group</button>
+<br><br>
+</div>
+
+<div id="groupDisplay">
+
+</div>
+
+
+<script src="./js/makegroups.js"></script>
+<script src="./js/functions.js"></script>
+
+
+
+<!--
+<div class="container" id="groupDisplay">
+    <ul class="group">
+        <h2>1</h2>
+        <li>Dave</li>
+        <li>Todd</li>
+    </ul>
+</div>
+-->
+

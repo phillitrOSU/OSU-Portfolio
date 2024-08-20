@@ -1,0 +1,71 @@
+
+{{!-- Create a table --}}
+<div class="table-container">
+<table id="Orders-table" class="center">
+    <caption>Orders</caption>
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Customer}}</td>
+            <td>{{this.Total}}</td>
+            <td>{{this.Quantity}}</td>
+            <td>{{this.Date}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+    
+<script src="./js/delete_Order.js"></script>
+
+
+{{!-- Form to add a record to the table  --}}
+<button type="button" class="open-button" onclick="openAddOrder()" id="add">Add an Order</button>
+
+<div class="form-popup" id="addOrderForm">
+<form id="add-Order-form-ajax" class="form-container">New Order
+    <button type="button" id="close" onclick="closeAddOrder()">X</button><br>
+
+    <label for="input-customer_ID">Customer: </label><br>
+    <select name="input-customer_ID" id="input-customer_ID">
+        <option value="">Select a Customer</option>
+        {{#each Customers}}
+        <option value="{{this.customer_ID}}">{{this.customer_Name}}</option>
+        {{/each}}
+    </select>
+    <br>
+    
+    <label for="input-total_Sales">Total: </label><br>
+    <input type="number" step="0.01" name="input-total_Sales" id="input-total_Sales"><br>
+
+    <label for="input-total_Beers">Total Beers: </label><br>
+    <input type="number" name="input-total_Beers" id="input-total_Beers"><br>
+
+    <label for="input-date">Date: </label><br>
+    <input type="datetime-local" name="input-date" id="input-date"><br><br>
+
+    <input type="submit" value="Add Order">
+</form>
+<div>
+
+{{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+<script src="./js/add_Order.js"></script>
+

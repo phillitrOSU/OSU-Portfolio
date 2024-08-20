@@ -1,0 +1,49 @@
+{{!-- Create a table --}}
+<div class="table-container">
+<table id="-table">
+    <caption>Beer Styles</caption>
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Style}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+<script src="./js/delete_Style.js"></script>
+
+{{!-- Form to add a record to the table --}}
+
+<button type="button" class="open-button" onclick="openAddStyle()" id="add">Add a Style</button>
+<div class="form-popup" id="addStyleForm">
+<form id="add-Style-form-ajax" class="form-container">
+    <button type="button" id="close" onclick="closeAddStyle()">X</button><br>
+    <label for="input-style_Name">Style Name: </label><br>
+    <input type="text" name="input-style_Name" id="input-style_Name">
+    <br>
+    <input type="submit">
+</form>
+</div>
+
+{{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+<script src="./js/add_Style.js"></script>

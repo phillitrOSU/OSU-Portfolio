@@ -1,0 +1,104 @@
+
+{{!-- Create a table --}}
+<div class="table-container">
+<table id="Beer_Orders-table">
+    <caption>Beer Orders</caption>
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+
+        <tr>
+            <td>{{this.sales_ID}}</td>
+            <td>{{this.beer_ID}}</td>
+            <td>{{this.orders_ID}}</td>
+            <td>{{this.quantity}}</td>
+            <td>{{this.total_Price}}</td>
+            <td><i class="fa-solid fa-trash" id="btn" onclick="deleteBeer_Order({{this.sales_ID}})"></i></td>   
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+<script src="./js/delete_Beer_Order.js"></script>
+
+
+{{!-- Form to add a record to the table  --}}
+
+<button type="button" class="open-button" onclick="openAddBeer_Order()" id="add">Add a Beer Order</button>
+
+<div class="form-popup" id="addBeer_OrderForm">
+<form id="add-Beer_Order-form-ajax" class="form-container">New Beer Order
+    <button type="button" id="close" onclick="closeAdd_BeerOrder()">X</button><br>
+
+    <label for="input-beer_ID">Beer: </label><br>
+    <select name="input-beer_ID" id="input-beer_ID">
+        <option value="">Select a Beer</option>
+        {{#each Beer}}
+        <option value="{{this.beer_ID}}">{{this.beer_Name}}</option>
+        {{/each}}
+    </select><br>
+
+    <label for="input-order_ID">Select an Order: </label><br>
+    <select name="input-order_ID" id="input-order_ID">
+        <option value="">Select an Order</option>
+        {{#each Orders}}
+        <option value="{{this.orders_ID}}">{{this.orders_ID}}</option>
+        {{/each}}
+    </select><br>
+    
+    <label for="input-quantity">Quantity: </label><br>
+    <input type="number" name="input-quantity" id="input-quantity"><br>
+
+    <label for="input-total_Price">Total Price: </label><br>
+    <input type="number" step="0.01" name="input-total_Price" id="input-total_Price"><br><br>
+
+    <input type="submit" value="Add Beer Order">
+</form>
+</div>
+
+{{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+<script src="./js/add_Beer_Order.js"></script>
+
+<div class="form-popup" id="updateBeer_OrderForm">
+<form id="update-Beer_Order-form-ajax" class="form-container">Update Beer Order
+    <button id="close" onclick="closeUpdateBeer_Order()">X</button><br>
+    <label for="input-sales_ID">Sales ID: </label><br>
+    <input type="number" name="input-sales_ID-update" id="input-sales_ID-update"><br>
+
+    <label for="input-beer_ID-update">Beer ID: </label><br>
+    <input type="number" name="input-beer_ID-update" id="input-beer_ID-update"><br>
+    
+    <label for="input-order_ID-update">Order ID: </label><br>
+    <input type="number" name="input-order_ID-update" id="input-order_ID-update"><br>
+
+    <label for="input-quantity-update">Quantity: </label><br>
+    <input type="number" name="input-quantity-update" id="input-quantity-update"><br>
+
+    <label for="input-total_Price-update">Total Price: </label><br>
+    <input type="number" step="0.01" name="input-total_Price-update" id="input-total_Price-update"><br><br>
+    </select>
+
+    <input type="submit" value="Update">
+
+</form>
+</div>
+
+<script src="./js/update_Beer_Order.js"></script>

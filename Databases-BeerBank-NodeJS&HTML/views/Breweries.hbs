@@ -1,0 +1,67 @@
+{{!-- Create a table --}}
+<div class="table-container">
+<table id="-table">
+    <caption>Breweries</caption>
+
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.Specialty}}</td>
+            <td>{{this.Region}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+<script src="./js/delete_Brewery.js"></script>
+
+{{!-- Form to add a record to the table  --}}
+<button type="button" class="open-button" onclick="openAddBrewery()" id="add">Add a Brewery</button>
+
+<div class="form-popup" id="addBreweryForm">
+<form id="add-Brewery-form-ajax" class="form-container">New Brewery
+    
+    <button type="button" id="close" onclick="closeAddBrewery()">X</button><br>
+
+    <label for="input-brewery_Name">Brewery Name: </label><br>
+    <input type="text" name="input-brewery_Name" id="input-brewery_Name"><br>
+
+    <label for="input-specialty_ID">Specialty: </label><br>
+    <select name="input-style_ID" id="input-specialty">
+        <option value="">Select a Specialty</option>
+        {{#each Styles}}
+        <option value="{{this.style_ID}}">{{this.style_Name}}</option>
+        {{/each}}
+    </select>
+    <br>
+    
+    <label for="input-region">Region: </label><br>
+    <input type="text" name="input-region" id="input-region"><br><br>
+
+    <input type="submit" value="Add Brewery">
+</form>
+</div>
+
+{{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+<script src="./js/add_Brewery.js"></script>
+
