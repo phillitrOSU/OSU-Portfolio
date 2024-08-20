@@ -1,7 +1,7 @@
 # Introduction
 Hello!
 
-This repository is a collection of portfolio projects from courses in my Computer Science Post-Bacc with Oregon State University. Consider it a ***learning*** repo: as I look back over these projects, there is not very much code that I wouldn't now refactor into something more clean or robust if I were to redo it. Though at this point I'd prefer to pursue new projects fresh rather than revisit all of my old assignments, this collection does offer a small glimpse into the tools, languages, frameworks and concepts I have tackled during my program. I present it here as a reference for potential employers.
+This repository is a collection of portfolio projects from courses in my Computer Science Post-Bacc with Oregon State University. Consider it a ***learning*** repo: as I look back over these projects, there is very little code that I wouldn't now refactor into something more clean or robust if I were to redo it. Though at this point I'm more interested in pursuing fresh projects to learn new skills rather than revisiting all of my old assignments, this collection does offer a glimpse into the tools, languages, frameworks and concepts I have tackled during my program. I present it here as a reference for potential employers.
 
 To connect with me please send an e-mail to [phillitr@oregonstate.edu](mailto:phillitr@oregonstate.edu). I look forward to hearing from you. Have a wonderful day!
 
