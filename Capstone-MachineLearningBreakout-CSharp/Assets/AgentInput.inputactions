@@ -1,0 +1,31 @@
+{
+    "name": "AgentInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "1e911914-fbeb-4f82-b90f-4fefd14d3d2e",
+            "actions": [
+                {
+                    "name": "PaddleRight",
+                    "type": "Button",
+                    "id": "6b23c994-bde3-4cce-82e2-f0ef2bf7b5eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PaddleLeft",
+                    "type": "Button",
+                    "id": "7a7625bd-4f60-4dd8-98d2-68c0fad7822c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}

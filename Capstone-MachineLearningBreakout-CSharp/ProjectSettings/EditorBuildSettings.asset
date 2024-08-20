@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e14b3e0a55c2d8705bf6da9470e50bb6
+  - enabled: 1
+    path: Assets/Scenes/SingleGame.unity
+    guid: 0174e54c87e32100e9949b1008c68451
+  - enabled: 1
+    path: Assets/Scenes/VsGameNN1.unity
+    guid: 2e8f16ab0619a2b74a49e4b3b3b954d9
+  - enabled: 1
+    path: Assets/Scenes/VsGameNN2.unity
+    guid: 4a90ace28ff0deb1bb29c445761fd6a8
+  - enabled: 1
+    path: Assets/Scenes/VsGameNN3.unity
+    guid: 7ae4494f20d05778d9e8c97b047bf925
+  - enabled: 1
+    path: Assets/Scenes/AgentFarm.unity
+    guid: 38954ebcb12d60f4e9a4751d2a97b584
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 0294ce8c83a41f2418b7c29c56126fc3, type: 2}
