@@ -1,15 +1,17 @@
 # Introduction
-This repository is a collection of portfolio projects from courses in my Computer Science Post-Bacc with Oregon State University. Consider it a ***"learning"*** repo: as I look back over these projects, there is not very much code from my early student days that I wouldn't now refactor into something more clean or robust! Though at this point I'd prefer to pursue new projects fresh rather than revisit all of my old assignments, this collection does offer a small glimpse into the tools, languages, frameworks and concepts I have tackled during my program. I present it here as a reference for potential employers.
+Hello!
+
+This repository is a collection of portfolio projects from courses in my Computer Science Post-Bacc with Oregon State University. Consider it a ***learning*** repo: as I look back over these projects, there is not very much code that I wouldn't now refactor into something more clean or robust if I were to redo it! Though at this point I'd prefer to pursue new projects fresh rather than revisit all of my old assignments, this collection does offer a small glimpse into the tools, languages, frameworks and concepts I have tackled during my program. I present it here as a reference for potential employers.
 
 To connect with me please send an e-mail to [phillitr@oregonstate.edu](mailto:phillitr@oregonstate.edu). I look forward to hearing from you. Have a wonderful day!
 
 Trevor Phillips
 Computer Science Major at Oregon State University, Graduating Summer 2024
 
+## Project Summaries:
 > [!NOTE]
 > Folders are named by this convention: **CourseTitle-ProjectName-Languages/Framework**. For example: **OperatingSystems-SmallShell-C**.
  
-### Project Summaries:
 - [Algorithms: Maze Solver (Python)](<Algorithms-MazeSolver-Python>)
     - Algorithmically solves the minimum length path through a walled maze.
 
