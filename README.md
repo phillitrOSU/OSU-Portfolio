@@ -18,7 +18,7 @@ Computer Science Major at Oregon State University, Graduating Summer 2024
 - [Architecture and Assembly: String Primitives and Macros (ASM)](<Architecture-StringPrimitivesMacros-ASM>)
     - Reads user number strings and converts to float and integer values.
 
-- [Capstone: Machine Learning Breakout (C#)](<Capstone-MachineLearningBreakout-C#>)
+- [Capstone: Machine Learning Breakout (C#)](<Capstone-MachineLearningBreakout-CSharp>)
     - A Unity clone of Atari Breakout with AI paddle competition.
     - Paddles trained using Unity's Machine Learning Toolkit: ML-Agents.
     - Playable here: https://simmer.io/@ramsaraj/ml-breakout-capstone
