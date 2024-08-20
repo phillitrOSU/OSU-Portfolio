@@ -9,7 +9,7 @@ Trevor Phillips
 Computer Science Major at Oregon State University, Graduating Summer 2024
 
 
-### Project Summaries:
+# Project Summaries:
 > [!NOTE]
 > Folders are named by this convention: **CourseTitle-ProjectName-Languages/Framework**. 
 > For example: **OperatingSystems-SmallShell-C**.
