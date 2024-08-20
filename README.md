@@ -10,7 +10,7 @@ Computer Science Major at Oregon State University, Graduating Summer 2024
 
 ## Project Summaries
 > [!NOTE]
-> Folders are named by this convention: **CourseTitle-ProjectName-Languages/Framework**. 
+> Folders are named by this convention: **CourseTitle-ProjectName-Languages/Framework**.<br/> 
 > For example: **OperatingSystems-SmallShell-C**.
  
 - [Algorithms: Maze Solver (Python)](<Algorithms-MazeSolver-Python>)
