@@ -23,6 +23,7 @@ Computer Science Major at Oregon State University, Graduating Summer 2024
     - A Unity clone of Atari Breakout with AI paddle competition.
     - Paddles trained using Unity's Machine Learning Toolkit: ML-Agents.
     - Playable here: https://simmer.io/@ramsaraj/ml-breakout-capstone
+    - Team: James Ramsaran, Trevor Phillips, Daniel Fontenot
 
 - [Cloud Development: Course Management Tool (Flask/Python)](<CloudDevelopment-CourseManagementTool-Flask&Python>)
     - Complete REST API for Course Management App.
